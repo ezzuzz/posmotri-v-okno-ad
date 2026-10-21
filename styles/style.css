@@ -1,3 +1,10 @@
+:root {
+  --color-bg: #1b1919;
+  --color-muted: #545050;
+  --color-text: #fff;
+  --color-placeholder: #8a8585;
+}
+
 *,
 *::before,
 *::after {
@@ -10,12 +17,12 @@ html {
 
 .page {
   inline-size: 1200px;
-  block-size: 100%;
+  min-block-size: 100vh;
   margin: auto;
-  color: #fff;
+  color: var(--color-text);
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  background-color: #1b1919;
+  background-color: var(--color-bg);
 }
 
 h1,
@@ -35,6 +42,15 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 /* Кастомный скроллбар */
