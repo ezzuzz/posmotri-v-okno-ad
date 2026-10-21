@@ -67,7 +67,28 @@ ol {
 }
 
 /* Общая кнопка */
+.button {
+  padding: 8px 16px;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+  color: var(--color-text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: var(--color-muted);
+}
+
+.button:focus-visible {
+  outline: 1px solid var(--color-text);
+  outline-offset: 3px;
+}
 
 /* Сетка: слева видео и форма, справа заголовок и список */
 .content {
