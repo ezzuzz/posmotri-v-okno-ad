@@ -91,14 +91,7 @@ ol {
 }
 
 /* Сетка: слева видео и форма, справа заголовок и список */
-.content {
-  display: grid;
-  grid-template-columns: 711px 396px;
-  column-gap: 63px;
-  align-items: start;
-  justify-content: center;
-  padding: 140px 0 80px;
-}
+
 
 /* Левая колонка */
 .result {
